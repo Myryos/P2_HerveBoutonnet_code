@@ -1,0 +1,27 @@
+@media all and (max-width: 992px)
+{
+    header a 
+    {
+       
+        
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    a:visited
+    {
+        text-decoration: none;
+    }
+}
+@media (min-width: 768px)
+{
+
+
+}
+
+@media (max-width : 767px)
+{
+
+
+}
