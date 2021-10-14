@@ -1,0 +1,98 @@
+@media all
+{
+                                    /*GENERAL*/
+    body
+    {
+        color:black;
+
+        font-family: 'Raleway', sans-serif;
+    }
+    a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    a:visited
+    {
+        text-decoration: none;
+        color:black;
+    }
+    li
+    {
+        list-style: none;
+        margin:0px 0px 10px 0px
+    }
+                                    /*HEADER*/
+    header
+    {
+        display:flex;
+        align-items: center;
+    }
+    
+    header a:nth-child(1)
+    {
+      margin-left: 5%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: auto;
+      width: 15%;
+    }    
+    #logo
+    {
+        width: 35%;
+        height: 85%;
+        align-self: center;
+    }
+    
+    .navigation
+    {
+        margin-right: 25px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        align-self: center;
+    }
+    .navigation:focus
+    {
+        border-top: 2px solid #0065FC;
+        color: #0065FC;
+    }
+                                    /*SEARCH*/
+                                    /*HEBERGEMENTS*/
+                                    /*ACTIVITE*/
+                                    /*FOOTER*/
+    
+    footer
+    {
+        display: flex;
+        align-items: center;
+        background-color: #F2F2F2;
+        height: 15%;
+    }
+    footer div 
+    {
+        margin:1% 10% 1% 1%;
+    }
+}
+
+@media (max-width: 992px)
+{
+                                    /*GENERAL*/
+                                    /*HEADER*/    
+                                    /*SEARCH*/
+                                    /*HEBERGEMENTS*/
+                                    /*ACTIVITE*/
+                                    /*FOOTER*/
+}
+
+@media (max-width: 768px)
+{
+                                    /*GENERAL*/
+                                    /*HEADER*/  
+                                    /*SEARCH*/
+                                    /*HEBERGEMENTS*/
+                                    /*ACTIVITE*/
+                                    /*FOOTER*/
+}
