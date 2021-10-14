@@ -63,13 +63,20 @@
                                     /*HEBERGEMENTS*/
     #Hebergements
     {
-
+        /*La somme des id Masseille et Populaire*/
+        display:flex;
     }
     #Marseille
-
     {
         background-color: #F2F2F2;
         border-radius: 20px;
+        display:flex;
+    }
+    #Populaire
+    {
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        display: flex;
     }
     .hebergements
     {
