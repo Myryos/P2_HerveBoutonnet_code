@@ -1,51 +1,46 @@
 @media all
 {
                                     /*GENERAL*/
-    body
-    {
+    body{
         color:black;
 
         font-family: 'Raleway', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
     }
-    a
-    {
+    a{
         text-decoration: none;
         color: black;
     }
-    a:visited
-    {
+    a:visited{
         text-decoration: none;
         color:black;
     }
-    li
-    {
+    li{
         list-style: none;
         margin:0px 0px 10px 0px
     }
                                     /*HEADER*/
-    header
-    {
+    header{
         display:flex;
         align-items: center;
     }
     
-    header a:nth-child(1)
-    {
+    header a:nth-child(1){
       margin-left: 5%;
       margin-top: auto;
       margin-bottom: auto;
       margin-right: auto;
       width: 15%;
     }    
-    #logo
-    {
+    #logo{
         width: 35%;
         height: 85%;
         align-self: center;
     }
     
-    .navigation
-    {
+    .navigation{
         margin-right: 25px;
         margin-top: auto;
         margin-bottom: auto;
@@ -54,57 +49,87 @@
         padding-bottom: 2%;
         align-self: center;
     }
-    .navigation:focus
-    {
+    .navigation:focus{
         border-top: 2px solid #0065FC;
         color: #0065FC;
     }
                                     /*SEARCH*/
                                     /*HEBERGEMENTS*/
-    #Hebergements
-    {
+    #Hebergements{
         /*La somme des id Masseille et Populaire*/
-        display:flex;
+        display: flex;
+        justify-content:space-evenly;
+       
     }
-    #Marseille
-    {
+    #Marseille {
         background-color: #F2F2F2;
         border-radius: 20px;
-        display:flex;
+        width: 50%;
+        display: flex; 
+        flex-direction: column;
     }
-    #Populaire
+    #ensemble{
+        
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: auto;
+       
+    }
+   .hebergements
     {
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        margin: 5% 5% 1% 1%;
+       
+    }
+    .hebergements img {
+        width: 95%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    #Populaire{
         background-color: #F2F2F2;
         border-radius: 20px;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .hebergements
-    {
-
+    #titre{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
-    .rating a {
-        color: #aaa;
-        text-decoration: none;
-        font-size: 3em;
-        transition: color .4s;
-     }
-     .rating a:hover,
-     .rating a:focus {
-        color: orange;
-        cursor: pointer;
-     }
+    .populous{
+        display: flex;
+        border-radius: 20px;
+        background-color: white;
+        margin: 5% 5% 1% 1%;
+    }
+    .populous img{
+        width:33%;
+        border-top-left-radius:20px;
+        border-bottom-left-radius: 20px;
+    }
+    .rating{
+        display: flex;
+        flex-wrap: wrap;
+    }
                                     /*ACTIVITE*/
+
                                     /*FOOTER*/
-    
-    footer
-    {
+    footer{
         display: flex;
         align-items: center;
         background-color: #F2F2F2;
         height: 15%;
     }
-    footer div 
-    {
+    footer div {
         margin:1% 10% 1% 1%;
     }
 }
