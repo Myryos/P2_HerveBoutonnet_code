@@ -66,6 +66,10 @@
     flex-wrap: wrap;
     align-items: center;
 }
+#listFiltre
+{
+    display: flex;
+}
 #info
 {
     display: flex;
@@ -140,18 +144,15 @@
         flex-wrap: wrap;
     }
                                     /*ACTIVITE*/
-#Activites
-{
+#Activites{
     display: flex;
     flex-direction: column;
 }
-#activity
-{
+#activity{
     display: flex;
     flex-wrap: wrap;
 }
-#activity div img
-{
+#activity div img{
     border-top-left-radius : 20px;
     border-top-right-radius: 20px;
 }
