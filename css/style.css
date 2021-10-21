@@ -54,6 +54,25 @@
         color: #0065FC;
     }
                                     /*SEARCH*/
+
+#Search
+{
+    display: flex;
+    flex-direction: column;
+}
+#Filtre
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#info
+{
+    display: flex;
+    align-items: center;
+}
+
+
                                     /*HEBERGEMENTS*/
     #Hebergements{
         /*La somme des id Masseille et Populaire*/
@@ -121,7 +140,21 @@
         flex-wrap: wrap;
     }
                                     /*ACTIVITE*/
-
+#Activites
+{
+    display: flex;
+    flex-direction: column;
+}
+#activity
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+#activity div img
+{
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
+}
                                     /*FOOTER*/
     footer{
         display: flex;
