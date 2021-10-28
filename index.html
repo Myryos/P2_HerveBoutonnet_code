@@ -12,17 +12,19 @@
 </head>
 <body>
 <header>
-    <a href="#"><img src="images/logo/Booki.png" alt="booky" id="logo"></a>
-    <a href="#" class="navigation">Hebergements</a>
-    <a href="#" class="navigation">Activites</a>
+    <div class="logo"><a href="#"><img src="images/logo/Booki.png" alt="booky"></a></div>
+    <div class="navigation">
+        <a href="#">Hebergements</a>
+        <a href="#">Activites</a>
+    </div>
 </header>
-<div id="Search">
+<div class="Search">
     <div><i class="fas fa-map-marker-alt"></i><input type="text" value="Marseille, France"><input type="button" value="Rechercher"></div>
-    <div id="Filtre">
+    <div class="Filtre">
         <div>
             <p>Filtre</p>
         </div>
-        <div id="listFiltre">
+        <div class="listFiltre">
             <div>
                 <i class="fas fa-money-bill-wave"></i>
                 <a href="">Economique</a> 
@@ -41,17 +43,17 @@
             </div>
         </div>
     </div>
-    <div id="info">
+    <div class="info">
         <i class="fas fa-info-circle"></i>
         <p>Plus de 500 logements sont disponibles ans cette ville</p>
     </div>
 </div>
-<div id="Hebergements">
-    <div id="Marseille">
-        <h2>Hebergements a Marseille</h2>
-        <div id="ensemble">
+<div class="Hebergements">
+    <div class="Marseille">
+        <div><h2>Hebergements a Marseille</h2></div>
+        <div class="ensemble">
             <div class="hebergements">
-                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" id="N1">
+                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="N1">
              <span><p>Auberge La Cannebiere</p></span>
                 <p></p>
                 <div class="rating">
@@ -63,7 +65,7 @@
              </div>
             </div>
             <div class="hebergements">
-                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" id="N2">
+                <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" class="N2">
              <span><p>Hotel duu port</p></span>
                 <p></p>
              <div class="rating">
@@ -75,7 +77,7 @@
             </div>
             </div>
             <div class="hebergements">
-            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" id="N3">
+            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="N3">
             <span><p>Hotel Les mouettes</p></span>
             <p></p>
             <div class="rating">
@@ -87,7 +89,7 @@
             </div>
             </div>
             <div class="hebergements">
-            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" id="N4">
+            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" class="N4">
             <span><p>Hotel de la mer</p></span>
             <p></p>
             <div class="rating">
@@ -99,7 +101,7 @@
             </div>
             </div>
             <div class="hebergements">
-            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" id="N5">
+            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="N5">
             <span><p>Auberger Le Panier</p></span>
             <p>prix</p>
             <div class="rating">
@@ -111,7 +113,7 @@
             </div>
             </div>
             <div class="hebergements">
-            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""id="N6">
+            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""class="N6">
             <span><p>Hotel chez Amina</p></span>
             <p></p>
             <div class="rating">
@@ -123,10 +125,10 @@
             </div>
             </div>
         </div>
-        <a href="#">Affiche plus</a>
+        <div><a href="#">Affiche plus</a></div>
     </div>
-    <div id="Populaire">
-        <div id="titre"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
+    <div class="Populaire">
+        <div class="titre"><h2>Les plus populaires</h2><i class="fas fa-chart-line"></i></div>
         <div class="populous">
             <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
             <div>
@@ -171,9 +173,9 @@
         </div>
     </div>
 </div>
-<div id="Activites">
+<div class="Activites">
     <h2>Activite a Marseille</h2>
-    <div id="activity">
+    <div class="activity">
         <div>
             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
             <p>Vieux Port</p>
@@ -207,7 +209,7 @@
             <li><span><h3>A propos</h3></span></li>
             <li><a href="#">Fonctionnement du site</a></li>
             <li><a href="#">Conditions generales de vente</a></li>
-            <li><a href="#">Donnees et Confidentialite</a></li>
+            <li><a href="#">Donnees et Confclassentialite</a></li>
         </ul>
     </div>
     <div>
@@ -220,7 +222,7 @@
     <div>
         <ul>
             <li><span><h3>Assistance</h3></span></li>
-            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Centre d'aclasse</a></li>
             <li><a href="#">Nous contacter</a></li>
         </ul>
     </div>
