@@ -213,7 +213,7 @@
         justify-content:space-evenly;
         margin-left:5%;
         margin-right: 5%;
-       
+       margin-bottom: 2%;
     }
     .Marseille {
         background-color: #F2F2F2;
@@ -345,7 +345,7 @@
     flex-direction: column;
     margin-left:5%;
     margin-right: 5%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 .activity{
     display: flex;
