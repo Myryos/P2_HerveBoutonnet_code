@@ -9,6 +9,14 @@
         flex-direction: column;
         margin:auto;
     }
+    h3
+    {
+        margin-bottom: 0px;
+    }
+    article
+    {
+        box-shadow:1px 1px #F2F2F2, -1px -1px #F2F2F2;
+    }
     a{
         text-decoration: none;
         color: black;
@@ -17,7 +25,12 @@
         text-decoration: none;
         color:black;
     }
-    
+    ul
+    {
+        margin:0;
+        margin-top: 5%;
+        padding: 0;
+    }
     li{
         list-style: none;
         margin:0px 0px 10px 0px
@@ -38,7 +51,7 @@
         margin-top: auto;
         margin-bottom: auto;
         margin-right: auto;
-        width: 25%;
+        width: 65%;
     }
     .logo a img
     {
@@ -263,6 +276,12 @@
         justify-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    .titre svg
+    {
+        min-height: 30px;
+        min-width: 30px;
     }
     .populous{
         align-self: center;
@@ -271,14 +290,17 @@
         border-radius: 20px;
         padding: 5px;
         background-color: white;
-        margin-bottom: 3%;
+        margin-bottom: 5%;
+        justify-self: flex-end;
+        max-height: 200px;
         width: 500px;
     }
-    .populous img{
+    .populous  img{
         border-top-left-radius:20px;
         border-bottom-left-radius: 20px;
-        height: 220px;
-        width: 45%;
+        height: 100%;
+        max-width: 250px;
+        min-width: 250px;
         object-fit: cover;
     }
    .contenue
@@ -287,28 +309,31 @@
        flex-wrap: nowrap;
        flex-direction: column;
        justify-content: space-around;
-       margin-left: 2%;
-       height: 115px;
+       margin-left: 4%;
+       /*height: 115px;*/
    }
    .contenue p
    {
        margin:0px;
-       margin-bottom: 5px;
+       margin-bottom: 5%;
    }
    .pop
    {
        flex-direction:column;
-       justify-content: flex-end;
-       height: 200px;
+       justify-content: flex-start;
+   }
+   .pop p
+   {
+      margin-bottom: 20%; 
    }
     .rating{
         display: flex;
         flex-wrap: wrap;
         color: #F2F2F2;
+        margin-bottom: 1%;
     }
     .ratingPop
     {
-        margin-top: 110px;
     }
     .note
     {
@@ -320,6 +345,7 @@
     flex-direction: column;
     margin-left:5%;
     margin-right: 5%;
+    margin-bottom: 1%;
 }
 .activity{
     display: flex;
@@ -335,7 +361,6 @@
 }
 .col
 {
-    /*height:500px;*/
     width: 400px;
     display:flex;
     flex-direction: column;
@@ -348,16 +373,21 @@
     max-height: 300px;
     margin-bottom: 2%;
 }
-.activity div
+.activity article
 {
     border-radius: 20px;
 }
-.activity div img{
+.activity article img{
     border-top-left-radius : 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+.activity article h3
+{
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
                                     /*FOOTER*/
     footer{
@@ -367,7 +397,18 @@
         height: 15%;
     }
     footer div {
-        margin:1% 10% 1% 1%;
+        display: flex;
+        margin-top: 1%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 1%;
+        width: 100%;
+    }
+    footer div section
+    {
+        align-self: flex-start;
+        margin-right: 25%;
+        min-width: 200px;
     }
 }
 
@@ -392,11 +433,23 @@
     margin: 0%;
     flex-wrap: wrap;
 }
+.hebergements
+{
+    width: 200px;
+}
+.hebergements img
+{
+    height: 110px;
+}
 .populous
 {
     align-self: flex-start;
     margin-left: 5%;
     margin-right: 5%;
+}
+.populous img
+{
+    height: 150px;
 }
 .popRight
 {
@@ -405,18 +458,33 @@
                                     /*ACTIVITE*/
 .activity
 {
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.col
+{
+    margin-bottom: 5%;
+}
+.mini
+{
+    margin-bottom: 5%;
 }
                                     /*FOOTER*/
+
+footer div section
+{
+    margin-right: 10%;
 }
 
-@media (min-device-width:360px) and (max-device-width: 768px) /*320px min*/ 
+                                }
+
+@media (min-width:360px) and (max-width: 768px) /*320px min*/ 
 /*Si necessaire refaire un breakpoint a 576px*/
 {
                                     /*GENERAL*/
 body
 {
-    font-size: 30px;
+    font-size: 12px;
 }
                                     /*HEADER*/ 
 header
@@ -424,8 +492,20 @@ header
     justify-content: center;
     flex-direction: column;
 }
+.logo
+{
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    width: 25%;
+}
 .logo a
 {
+    width: 40%;
+    margin-right: 0;
+    align-self: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
 }
 .navigation
@@ -443,7 +523,7 @@ header
     margin:0px;
 }
 .navigation a:focus{
-    border:none;
+    border-top:none;
 
     border-bottom: 1px solid #0065FC;
     
@@ -500,8 +580,8 @@ header
 }
 .iconeFilter
 {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
                                     /*HEBERGEMENTS*/
@@ -515,69 +595,82 @@ header
 }
 .hebergements
 {
-    width:85%;
-    height: 400px;
+    width: 90%;
+    height: 200px;
     margin-bottom: 3%;
+}
+.titre svg
+{
+        min-height: 20px;
+        min-width: 20px;
 }
 .populous
 {
     align-self: center;
-    width: 85%;
-    height: 250px;
+    width: 90%;
+    height: 100px;
 }
 .populous img
 {
-    height: 250px;
+    height: 100%;
+    min-width: 100px;
+    max-width: 100px;
 }
 .contenue
 {
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
 }
-
+.pop p
+{
+    margin:0;
+}
 .rating
 {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .ratingPop
 {
-    margin-top: 100px;
+    margin-top:  30px;
 }
 
                                     /*ACTIVITE*/
 .activity
 {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
-.activity section
-{
-    width: 100%;
-    height: 1000px;
-}
 .col
 {
-    width: 85%;
-    height: 500px;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 5%;
+}
+.activity div
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .mini
 {
-    width: 85%;
-    min-height: 500px;
+    width: 90%;
+    max-height: 150px;
+    align-self: center;
+    margin-bottom: 5%;
 }  
                                     /*FOOTER*/
-footer
+footer div
 {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-footer div
-{
-    margin: 0px;
 }
 }
